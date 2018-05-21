@@ -41,6 +41,8 @@ GEM
       jekyll (~> 3.3)
       sinatra (~> 1.4)
       sinatra-contrib (~> 1.4)
+    jekyll-contentblocks (1.2.0)
+      jekyll
     jekyll-feed (0.9.3)
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.2)
@@ -96,6 +98,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.7.3)
   jekyll-admin
+  jekyll-contentblocks
   jekyll-feed (~> 0.6)
   jekyll-seo-tag
   slim!

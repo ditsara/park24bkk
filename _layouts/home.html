@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="home">
+{% comment %}
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
@@ -30,5 +30,106 @@ layout: default
 
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
+{% endcomment %}
 
+    <!-- ***** Welcome Area Start ***** -->
+    <section class="welcome_area height-600 background-overlay jarallax" id="home" style="background-image: url(http://placehold.it/1200x600);">
+        <!-- Welcome Text -->
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="welcome_text white">
+                        {% contentblock banner %}
+                        <a href="#" class="btn default-button" role="button">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Welcome Area End ***** -->
+
+
+    <!-- ***** About Us Area Start ***** -->
+    <section class="about_area section_padding_100_70" id="about">
+      <div class="container">
+        <div class="about_us_area">
+          <div class="row">
+            <!-- About Us Area -->
+            <div class="col-12 col-lg-6 item">
+              <!-- About Us Text Start -->
+              <div class="about_us_text">
+                {{ content }}
+                <a href="#" class="btn btn-pill btn-mat-green">Learn More <i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 item">
+              <div class="about_us_thumb m-md-top-50 m-xs-top-50">
+                <img src="http://placehold.it/1178x600" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Why Choose Us Area Start ***** -->
+    <section class="why_choose_us_area">
+        <div class="why_choose_us_text_area">
+
+            <!-- Single Why Choose Us Area Start  -->
+            <div class="single_choose_us item" style="background-image: url(img/bg-img/choose-us-1.jpg);">
+                <div class="choose_us_icon_title">
+                    <div class="choose_us_icon hexagon">
+                        <i class="ion-trophy" aria-hidden="true"></i>
+                    </div>
+                    {% contentblock why_1_title %}
+                </div>
+                <div class="choose_us_overlay_text">
+                    <div class="classy-table">
+                        <div class="classy-table-cell">
+                            {% contentblock why_1 %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Why Choose Us Area Start  -->
+            <div class="single_choose_us item" style="background-image: url(img/bg-img/choose-us-2.jpg);">
+                <div class="choose_us_icon_title">
+                    <div class="choose_us_icon hexagon">
+                        <i class="ion-help-buoy" aria-hidden="true"></i>
+                    </div>
+                    {% contentblock why_2_title %}
+                </div>
+                <div class="choose_us_overlay_text">
+                    <div class="classy-table">
+                        <div class="classy-table-cell">
+                            {% contentblock why_2 %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Why Choose Us Area Start  -->
+            <div class="single_choose_us item" style="background-image: url(img/bg-img/choose-us-3.jpg);">
+                <div class="choose_us_icon_title">
+                    <div class="choose_us_icon hexagon">
+                        <i class="ion-eye" aria-hidden="true"></i>
+                    </div>
+                    {% contentblock why_3_title %}
+                </div>
+                <div class="choose_us_overlay_text">
+                    <div class="classy-table">
+                        <div class="classy-table-cell">
+                            {% contentblock why_3 %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ***** Why Choose Us Area Start ***** -->
+
+<div class="home">
 </div>
