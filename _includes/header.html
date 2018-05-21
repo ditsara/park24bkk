@@ -1,0 +1,53 @@
+
+<!-- ***** Preloader Start ***** -->
+<div id="preloader">
+  <div class="classy-load"></div>
+</div>
+
+<!-- ***** Header Area Start ***** -->
+<header class="header_area">
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_paths = site.header_pages | default: default_paths -%}
+  <div class="main_header_area animated">
+    <div class="container">
+      <nav id="navigation1" class="navigation">
+        <!-- Logo Area -->
+        <div class="nav-header">
+          <a class="nav-brand" href="/">
+            {{ site.title | escape }}
+          </a>
+          <div class="nav-toggle"></div>
+        </div>
+
+        {%- if page_paths -%}
+        <!-- Main Menus Wrapper -->
+        <div class="nav-menus-wrapper">
+          <a href="mailto: {{ site.email }}" class="nav-button btn-pill bg-mat-green align-to-right">Contact Us</a>
+          <ul class="nav-menu align-to-right" id="nav">
+
+            {%- for path in page_paths -%}
+            {%- assign my_page = site.pages | where: "path", path | first -%}
+            {%- if my_page.title -%}
+            <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+
+            {% comment %}
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+            {% endcomment %}
+
+            {%- endif -%}
+            {% endfor -%}
+          </ul>
+        </div>
+        {%- endif -%}
+
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- ***** Header Area End ***** -->
+
