@@ -10,16 +10,16 @@
     var mapOptions = {
         zoom: 15,
         center: latlng,
-        scrollwheel: false,
-        scaleControl: false,
-        disableDefaultUI: true,
+        // scrollwheel: false,
+        // scaleControl: false,
+        // disableDefaultUI: true,
         mapTypeControlOptions: {
             mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'gMap']
         }
     };
     map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
     var geocoder_map = new google.maps.Geocoder();
-    var address = 'Rome';
+    var address = 'Park24 Condominium Klongton, Klongtoey, Bangkok';
     geocoder_map.geocode({
         'address': address
     }, function (results, status) {
@@ -31,7 +31,7 @@
                 position: map.getCenter()
             });
         } else {
-            alert("Geocode was not successful for the following reason: " + status);
+            console.log("Geocode was not successful for the following reason: " + status);
         }
     });
     var mapType = new google.maps.StyledMapType(stylez, {
