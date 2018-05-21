@@ -26,10 +26,11 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
 include: ['_pages']
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 host: 0.0.0.0
 
@@ -41,6 +42,7 @@ exclude:
   - docker-compose.yml
   - Gemfile
   - Gemfile.lock
+  - docs
   - node_modules
   - bundles/
   - vendor/bundle/

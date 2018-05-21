@@ -5,7 +5,7 @@ permalink: "/test/"
 ---
 
 # Test Page
-This is a test page. Yah.
+This is a test page. Yah!
 
 Here is how to insert a picture:
 
