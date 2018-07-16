@@ -16,6 +16,8 @@ Here is how to insert a picture:
 
 ## Subheader
 
+hello i am a preview.
+
 >Quoted text
 
 * A list
@@ -23,3 +25,9 @@ Here is how to insert a picture:
 * things
 
 Here is something **important**, and here is something that *requires emphasis*.
+
+| table | header |
+|-------|---------|
+| cell a  | cell b |
+
+![](/desert-storm.jpg)
