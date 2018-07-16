@@ -33,14 +33,13 @@ layout: default
 {% endcomment %}
 
     <!-- ***** Welcome Area Start ***** -->
-    <section class="welcome_area height-600 background-overlay jarallax" id="home" style="background-image: url(http://placehold.it/1200x600);">
+    <section class="welcome_area height-600 background-overlay jarallax" id="home" style="background-image: url(/PARK24BKK-Cover-1200x600.jpg);">
         <!-- Welcome Text -->
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="welcome_text white">
                         {% contentblock banner %}
-                        <a href="#" class="btn default-button" role="button">Discover More</a>
                     </div>
                 </div>
             </div>
@@ -59,19 +58,31 @@ layout: default
               <!-- About Us Text Start -->
               <div class="about_us_text">
                 {{ content }}
-                <a href="#" class="btn btn-pill btn-mat-green">Learn More <i class="fa fa-angle-right"></i></a>
+
               </div>
             </div>
             <div class="col-12 col-lg-6 item">
               <div class="about_us_thumb m-md-top-50 m-xs-top-50">
-                <img src="http://placehold.it/1178x600" alt="">
+                <a href="/Plan20Floor.jpg" target="_blank">
+                  <img src="/Plan20Floor.jpg" alt="">
+                  <p>See floor plan</p>
+                </a>
               </div>
             </div>
           </div>
+
+          {%- for item in site.pages -%}
+            <a href="{{item.url | relative_url}}" class="btn default-button-green">
+              {{item.title | escape}}
+              <i class="fa fa-angle-right"></i>
+            </a>
+            &nbsp;
+          {%- endfor-%}
         </div>
       </div>
     </section>
 
+{% comment %}
     <!-- ***** Why Choose Us Area Start ***** -->
     <section class="why_choose_us_area">
         <div class="why_choose_us_text_area">
@@ -130,6 +141,7 @@ layout: default
         </div>
     </section>
     <!-- ***** Why Choose Us Area Start ***** -->
+{% endcomment %}
 
 <div class="home">
 </div>

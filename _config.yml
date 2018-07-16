@@ -23,11 +23,17 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ssh.danitsara.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+collections:
+  units:
+    output: true
+    permalink: /:collection/:name
+  pages:
+    output: true
+    permalink: /:collection/:name
 
 # Build settings
 markdown: kramdown
 # theme: minima
-include: ['_pages']
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

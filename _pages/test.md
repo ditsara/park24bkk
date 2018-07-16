@@ -1,6 +1,7 @@
 ---
 title: Test
 layout: page
+published: false
 permalink: "/test/"
 ---
 

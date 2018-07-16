@@ -1,5 +1,6 @@
 ---
 title: Location
+layout: page
 ---
 
 ## Park 24 Condominium

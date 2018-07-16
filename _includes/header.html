@@ -7,8 +7,6 @@
 
 <!-- ***** Header Area Start ***** -->
 <header class="header_area">
-  {%- assign default_paths = site.pages | map: "path" -%}
-  {%- assign page_paths = site.header_pages | default: default_paths -%}
   <div class="main_header_area animated">
     <div class="container">
       <nav id="navigation1" class="navigation">
@@ -20,16 +18,14 @@
           <div class="nav-toggle"></div>
         </div>
 
-        {%- if page_paths -%}
         <!-- Main Menus Wrapper -->
         <div class="nav-menus-wrapper">
           <a href="mailto: {{ site.email }}" class="nav-button btn-pill bg-mat-green align-to-right">Contact Us</a>
           <ul class="nav-menu align-to-right" id="nav">
 
-            {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+            {%- for item in site.pages -%}
+            {%- if item.title -%}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></li>
 
             {% comment %}
             <li class="active"><a href="#home">Home</a></li>
@@ -44,7 +40,6 @@
             {% endfor -%}
           </ul>
         </div>
-        {%- endif -%}
 
       </nav>
     </div>

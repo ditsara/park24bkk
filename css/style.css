@@ -36,3 +36,7 @@
 
 
 /* Place your custom css code here */
+
+.post-content img {
+  width: 100%;
+}
