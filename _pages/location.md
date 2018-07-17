@@ -8,7 +8,7 @@ layout: page
 Khlong Tan, Khlong Toei,
 Bangkok 10110, Thailand.
 
-![map](/PK24-Map.jpg) 
+![map]({{ "/PK24-Map.jpg" | relative_url }}) 
 
 ## Nearby Amenities
 ### Transportation

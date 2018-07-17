@@ -20,6 +20,9 @@
     map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
     var geocoder_map = new google.maps.Geocoder();
     var address = 'Park24 Condominium Klongton, Klongtoey, Bangkok';
+    var iconUrl = document.getElementById('map-icon').getAttribute('href') ||
+      'img/core-img/map.png';
+
     geocoder_map.geocode({
         'address': address
     }, function (results, status) {
@@ -27,7 +30,7 @@
             map.setCenter(results[0].geometry.location);
             var marker = new google.maps.Marker({
                 map: map,
-                icon: 'img/core-img/map.png',
+                icon: iconUrl,
                 position: map.getCenter()
             });
         } else {

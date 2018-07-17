@@ -28,18 +28,18 @@ layout: page
 
 ## Photos
 
-![Living Room](/Tpye1-1.jpg)
-![Sofa](/Tpye1-2.jpg)
-![Bed Room](/Tpye1-3.jpg)
-![Sofa, Bench](/Tpye1-4.jpg)
-![Living Room](/Tpye1-5.jpg)
-![Dining Table](/Tpye1-6.jpg)
-![Dining Table](/Tpye1-7.jpg)
-![Kitchen](/Tpye1-8.jpg)
-![Bath Room](/Tpye1-9.jpg)
-![Living Room](/Tpye1-10.jpg)
-![Bed Room](/Tpye1-11.jpg)
-![Plan-741](/741.jpg)
+![Living Room]({{ "/Tpye1-1.jpg" | relative_url }})
+![Sofa]({{ "/Tpye1-2.jpg" | relative_url }})
+![Bed Room]({{ "/Tpye1-3.jpg" | relative_url }})
+![Sofa, Bench]({{ "/Tpye1-4.jpg" | relative_url }})
+![Living Room]({{ "/Tpye1-5.jpg" | relative_url }})
+![Dining Table]({{ "/Tpye1-6.jpg" | relative_url }})
+![Dining Table]({{ "/Tpye1-7.jpg" | relative_url }})
+![Kitchen]({{ "/Tpye1-8.jpg" | relative_url }})
+![Bath Room]({{ "/Tpye1-9.jpg" | relative_url }})
+![Living Room]({{ "/Tpye1-10.jpg" | relative_url }})
+![Bed Room]({{ "/Tpye1-11.jpg" | relative_url }})
+![Plan-741]({{ "/741.jpg" | relative_url }})
 
 Laminated floor, furniture, bed with mattress, closet, sofa, dressing table,
 dining table, refrigerator, air conditioner, microwave, television, laundry

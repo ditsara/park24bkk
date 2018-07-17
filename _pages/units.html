@@ -6,6 +6,6 @@ permalink: /units
 
 <ul>
   {%- for item in site.units -%}
-    <li><a href="{{ item.url }}">{{ item.title | escape }}</a></li>
+    <li><a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></li>
   {%- endfor -%}
 </ul>

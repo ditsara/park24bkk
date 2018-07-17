@@ -33,7 +33,7 @@ layout: default
 {% endcomment %}
 
     <!-- ***** Welcome Area Start ***** -->
-    <section class="welcome_area height-600 background-overlay jarallax" id="home" style="background-image: url(/PARK24BKK-Cover-1200x600.jpg);">
+    <section class="welcome_area height-600 background-overlay jarallax" id="home" style="background-image: url({{ "/PARK24BKK-Cover-1200x600.jpg" | relative_url }});">
         <!-- Welcome Text -->
         <div class="container h-100">
             <div class="row h-100 align-items-center">
@@ -63,8 +63,8 @@ layout: default
             </div>
             <div class="col-12 col-lg-6 item">
               <div class="about_us_thumb m-md-top-50 m-xs-top-50">
-                <a href="/Plan20Floor.jpg" target="_blank">
-                  <img src="/Plan20Floor.jpg" alt="">
+                <a href="{{ "/Plan20Floor.jpg" | relative_url }}" target="_blank">
+                  <img src="{{ "/Plan20Floor.jpg" | relative_url }}" alt="">
                   <p>See floor plan</p>
                 </a>
               </div>
