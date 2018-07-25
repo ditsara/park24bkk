@@ -7,14 +7,14 @@ layout: home
 
 ### Welcome to Park24BKK
 
-
-Park 24 on Sukhumvit 24 is a 2 building condo with a total of 837 residential
-units made up of 1 and 2 bedroom condo units. Duplexes are available.
+ACCIP Co., Ltd. would like to offer condominiums for rent at Park24. We have 7
+two- and one-bedroom units available on the 20th floor of building
+No.2.
 
 Communal facilities in Park 24 include gym, 40m swimming pool, sauna, library
 and large garden areas.
 
-Located on Sukhumivt 24 approximately 500m from Phrom Phong BTS and Sukhumvit
+Located on Sukhumvit 24 approximately 500m from Phrom Phong BTS and Sukhumvit
 Road. Park 24 is in an ideal location for easy access around the city and for
 some of the best shopping, entertainment and restaurants the city has to offer
 at the Emporium and EmQuartier shopping mall by Phrom Phong BTS.
