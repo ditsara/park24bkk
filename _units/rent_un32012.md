@@ -8,7 +8,7 @@ layout: page
 **1 bedroom for rent. 32,000฿ per month on a minimum 12 month contract.**
 
 | **Rental Price** |  ฿ 32,000.- per month
-| **Unit Type** |  Combined Unit With 1 Bedroom (31.88 sq.m.)
+| **Unit Type** |  1 Bedroom (31.88 sq.m.)
 | **Room** |  752
 | **Bedrooms** |  1
 | **Bathrooms** |  1
