@@ -5,9 +5,6 @@ layout: page
 
 ## Park 24 Condominium
 
-**1 bedroom for rent. 28,000฿ per month on a minimum 12 month contract.**
-
-| **Rental Price** |  ฿ 28,000.- per month
 | **Unit Type** |  1 Bedroom (31.88 sq.m.)
 | **Room** |  752
 | **Bedrooms** |  1
